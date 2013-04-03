@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="?android:attr/textAppearanceLarge"
+	android:padding="18dip">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="10dip" android:layout_weight="1"
+		android:layout_height="fill_parent">
+
+		<ImageView android:id="@+id/img" android:layout_width="fill_parent"
+			android:layout_height="35dip" android:layout_marginRight="10dp"
+			android:layout_weight="3" android:gravity="center_vertical"
+			android:src="@drawable/icon" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="28dip" android:layout_weight="1"
+			android:gravity="center_vertical">
+
+			<TextView android:id="@+id/text" android:layout_width="fill_parent"
+				android:layout_height="28dip" android:layout_weight="1"
+				android:gravity="center_vertical|left" android:textSize="20dip" />
+			<TextView android:id="@+id/volume" android:layout_width="fill_parent"
+				android:layout_height="28dip" android:layout_weight="3"
+				android:gravity="center_vertical|left" android:textSize="20dip" />
+		</LinearLayout>
+
+		<TextView android:id="@+id/time" android:layout_width="fill_parent"
+			android:layout_height="28dip" android:layout_weight="3"
+			android:gravity="center_vertical|right" android:textSize="12dip" />
+	</LinearLayout>
+</LinearLayout>

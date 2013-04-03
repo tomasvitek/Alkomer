@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="cz.jmx.tomik.alkomer.android"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="4" />
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/CustomTheme">
+        <activity android:name=".Main"
+                  android:label="">                 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>   
+            
+        </activity>
+
+		<activity android:name=".DrinkListActivity"
+                  android:label="Výběr nápoje">                                 
+        </activity>
+        
+		<activity android:name=".GlassListActivity"
+                  android:label="Seznam vypitých nápojů">
+        </activity>        
+        
+		<activity android:name=".StatisticsActivity"
+                  android:label="Statistiky">
+        </activity>        
+		
+		<activity android:name=".LoginActivity"
+                  android:label="Přihlášení">
+        </activity>		
+		
+		<activity android:name=".RegistrationActivity"
+                  android:label="Registrace">
+        </activity>
+
+		<activity android:name=".ForgottenPasswordActivity"
+                  android:label="Zapomenuté heslo">
+        </activity>
+        
+        <activity android:name=".DashboardActivity"
+                  android:label="Alkoměr">
+        </activity>
+        
+        <activity android:name="SettingsActivity"
+                  android:label="Nastavení">
+        </activity>
+
+    </application>
+</manifest>

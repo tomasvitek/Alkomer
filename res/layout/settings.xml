@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="Změna přihlašovacích údajů">
+
+		<EditTextPreference android:name="Vaše e-mailová adresa"
+			android:summary="Vaše e-mailová adresa (nelze změnit)" android:title="E-mail"
+			android:focusable="false" android:key="email" />
+
+		<EditTextPreference android:name="Pšššt! Heslo."
+			android:summary="Pšššt! Vaše tajné heslo." android:title="Heslo"
+			android:key="password" android:password="true" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Další nastavení">
+
+		<cz.jmx.tomik.alkomer.android.tools.IntEditTextPreference
+
+			android:name="Vaše tajná váha." android:summary="Vaše tajná váha."
+			android:title="Váha [v kg]" android:key="weight" android:numeric="integer"
+			android:maxLength="3" />
+
+		<ListPreference android:title="Pohlaví"
+			android:summary="Vyberte si Vaše oblíbené pohlaví." android:key="gender"
+			android:defaultValue="male" android:entryValues="@array/genderValues"
+			android:entries="@array/genders" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Ostatní">
+
+		<Preference android:name="Odhlášení" android:defaultValue="none"
+			android:title="Odhlášení" android:summary="Pápá!" android:key="logout" />
+
+		<Preference android:name="Vymazat uložené informace o nápojích"
+			android:defaultValue="none" android:title="Vymazat data"
+			android:summary="Zatloukat! Zatloukat! Mazat!" android:key="delete" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="O aplikaci">
+
+		<Preference android:name="O aplikaci" android:defaultValue="none"
+			android:title="O aplikaci" android:summary="Informace o aplikaci"
+			android:key="about" />
+
+		<Preference android:name="Podmínky používání"
+			android:defaultValue="none" android:title="Podmínky používání"
+			android:summary="Přečíst!" android:key="rules" />
+
+	</PreferenceCategory>
+</PreferenceScreen>

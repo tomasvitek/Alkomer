@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:stretchColumns="1" xmlns:android="http://schemas.android.com/apk/res/android">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_below="@+id/btn1">
+		<TableLayout android:id="@+id/TableLayout01"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:stretchColumns="1" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+			<TableLayout android:id="@+id/day" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="8dip"
+				android:layout_marginRight="8dip" android:layout_marginBottom="16dip"
+				android:layout_marginTop="0sp" android:stretchColumns="1"
+				android:paddingTop="12dip" android:paddingBottom="12dip"
+				android:paddingLeft="8dip" android:paddingRight="8dip"
+				android:background="@drawable/boxbackground" xmlns:android="http://schemas.android.com/apk/res/android">
+
+				<TextView android:id="@+id/today" android:layout_height="wrap_content"
+					android:text="Dnes" android:layout_width="wrap_content"
+					android:paddingLeft="10sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginTop="0sp"
+					android:gravity="left" android:textSize="35sp"></TextView>
+				<TextView android:id="@+id/label1" android:layout_height="wrap_content"
+					android:text="Seznam vypitých nápojů" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<TextView android:id="@+id/list" android:layout_height="wrap_content"
+					android:text="" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingBottom="10sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="28sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="12sp"></TextView>
+
+				<TextView android:id="@+id/label2" android:layout_height="wrap_content"
+					android:text="Zajímavosti" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="10sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<TextView android:id="@+id/day_count"
+					android:layout_height="wrap_content" android:text="Počet vypitých nápojů: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/day_types"
+					android:layout_height="wrap_content" android:text="Počet druhů nápojů: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/day_alc" android:layout_height="wrap_content"
+					android:text="Vypito čistého alkoholu: " android:layout_width="wrap_content"
+					android:paddingLeft="20sp" android:paddingTop="0sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginLeft="10sp" android:layout_marginTop="0sp"
+					android:gravity="left" android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/day_max" android:layout_height="wrap_content"
+					android:text="Max. obj. alk. v krvi: " android:layout_width="wrap_content"
+					android:paddingLeft="20sp" android:paddingTop="0sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginLeft="10sp" android:layout_marginTop="0sp"
+					android:gravity="left" android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/label3" android:layout_height="wrap_content"
+					android:text="Grafy" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<ImageView android:id="@+id/day_graf_1" android:src="@drawable/spinner_black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<ImageView android:id="@+id/day_graf_2" android:src="@drawable/spinner_black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+			</TableLayout>
+
+			<!-- <ImageView xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:src="@android:drawable/divider_horizontal_textfield" android:layout_height="wrap_content" 
+				android:scaleType="fitXY" android:layout_marginLeft="10px" android:layout_marginRight="10px" 
+				android:paddingBottom="2dp" android:paddingTop="2dp" android:layout_width="wrap_content"/> -->
+
+			<TableLayout android:id="@+id/week" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="8dip"
+				android:layout_marginRight="8dip" android:layout_marginBottom="16dip"
+				android:layout_marginTop="0sp" android:stretchColumns="1"
+				android:paddingTop="12dip" android:paddingBottom="12dip"
+				android:paddingLeft="8dip" android:paddingRight="8dip"
+				android:background="@drawable/boxbackground" xmlns:android="http://schemas.android.com/apk/res/android">
+
+				<TextView android:id="@+id/last_week"
+					android:layout_height="wrap_content" android:text="Minulý týden"
+					android:layout_width="wrap_content" android:paddingLeft="10sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="35sp"></TextView>
+
+				<TextView android:id="@+id/label4" android:layout_height="wrap_content"
+					android:text="Zajímavosti" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="10sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<TextView android:id="@+id/week_count"
+					android:layout_height="wrap_content" android:text="Počet vypitých nápojů: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/week_types"
+					android:layout_height="wrap_content" android:text="Počet druhů nápojů: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/week_alc" android:layout_height="wrap_content"
+					android:text="Vypito čistého alkoholu: " android:layout_width="wrap_content"
+					android:paddingLeft="20sp" android:paddingTop="0sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginLeft="10sp" android:layout_marginTop="0sp"
+					android:gravity="left" android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/week_max" android:layout_height="wrap_content"
+					android:text="Max. obj. alk. v krvi: " android:layout_width="wrap_content"
+					android:paddingLeft="20sp" android:paddingTop="0sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginLeft="10sp" android:layout_marginTop="0sp"
+					android:gravity="left" android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/label5" android:layout_height="wrap_content"
+					android:text="Grafy" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<ImageView android:id="@+id/day_graf_3" android:src="@drawable/spinner_black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<ImageView android:id="@+id/day_graf_4" android:src="@drawable/spinner_black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+			</TableLayout>
+			<!-- <ImageView xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:src="@android:drawable/divider_horizontal_textfield" android:layout_height="wrap_content" 
+				android:scaleType="fitXY" android:layout_marginLeft="10px" android:layout_marginRight="10px" 
+				android:paddingBottom="2dp" android:paddingTop="2dp" android:layout_width="wrap_content"/> -->
+
+			<TableLayout android:id="@+id/month"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="8dip" android:layout_marginRight="8dip"
+				android:layout_marginBottom="16dip" android:layout_marginTop="0sp"
+				android:stretchColumns="1" android:paddingTop="12dip"
+				android:paddingBottom="12dip" android:paddingLeft="8dip"
+				android:paddingRight="8dip" android:background="@drawable/boxbackground"
+				xmlns:android="http://schemas.android.com/apk/res/android">
+
+				<TextView android:id="@+id/last_month"
+					android:layout_height="wrap_content" android:text="Minulý měsíc"
+					android:layout_width="wrap_content" android:paddingLeft="10sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="35sp"></TextView>
+
+				<TextView android:id="@+id/label6" android:layout_height="wrap_content"
+					android:text="Zajímavosti" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="10sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<TextView android:id="@+id/month_count"
+					android:layout_height="wrap_content" android:text="Počet vypitých nápojů: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/month_types"
+					android:layout_height="wrap_content" android:text="Počet druhů nápojů: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/month_alc"
+					android:layout_height="wrap_content" android:text="Vypito čistého alkoholu: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/month_max"
+					android:layout_height="wrap_content" android:text="Max. obj. alk. v krvi: "
+					android:layout_width="wrap_content" android:paddingLeft="20sp"
+					android:paddingTop="0sp" android:paddingBottom="0sp"
+					android:layout_marginBottom="0sp" android:layout_marginLeft="10sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="15sp"></TextView>
+				<TextView android:id="@+id/label7" android:layout_height="wrap_content"
+					android:text="Grafy" android:layout_width="wrap_content"
+					android:paddingTop="10sp" android:paddingLeft="20sp"
+					android:paddingBottom="0sp" android:layout_marginBottom="0sp"
+					android:layout_marginTop="0sp" android:gravity="left"
+					android:textSize="20sp"></TextView>
+				<ImageView android:id="@+id/day_graf_5" android:src="@drawable/spinner_black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<ImageView android:id="@+id/day_graf_6" android:src="@drawable/spinner_black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+			</TableLayout>
+		</TableLayout>
+
+	</ScrollView>
+</TableLayout>

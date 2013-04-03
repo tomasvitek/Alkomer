@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appVersion">1.0</string>
+	<integer name="apiVersion">1</integer>
+
+	<!-- TODO: translations -->
+	<string-array name="genders">
+		<item>muž</item>
+		<item>žena</item>
+	</string-array>
+
+	<string-array name="genderValues">
+		<item>male</item>
+		<item>female</item>
+	</string-array>
+
+	<color name="titlebarBackground">#f3f0be</color>
+	<color name="text">#000000</color>
+	<!-- TODO: add more colors and use them in XML files -->
+
+</resources>
