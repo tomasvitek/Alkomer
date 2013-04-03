@@ -7,11 +7,11 @@ The app was available in the [Google Play](https://play.google.com/store/apps/de
 In anticipation of *Alkomer 2* release, I am open sourcing original *Alkomer* app. The app is dependant on backend, which is no longer running and therefore if you compile this app, it will not work. However this code may be helpful to somebody.
 
 ## Screenshots
-<img src="/img/dashboard.png" style="width:220px"> <img src="/img/drinklist.png" style="width:220px"> 
+<img src="/img/dashboard.png" style="max-width:220px"> <img src="/img/drinklist.png" style="max-width:220px"> 
 
-<img src="/img/glasslist.png" style="width:220px"> <img src="/img/month_stats.png" style="width:220px"> 
+<img src="/img/glasslist.png" style="max-width:220px"> <img src="/img/month_stats.png" style="max-width:220px"> 
 
-<img src="/img/statistics.png" style="width:220px">
+<img src="/img/statistics.png" style="max-width:220px">
 
 ## Requirements
 *Android 1.6* or higher
