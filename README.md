@@ -1,17 +1,17 @@
 ![Alkomer](/img/alkomer.png)
 
-*Alkomer* is an Android app for realtime calculation of blood alcohol content (BAC) with monthly, weekly and daily statistics and graphs. (It speaks only Czech, but the upcoming *Alkomer 2* will be in English).
+*Alkomer* is an Android app for realtime calculation of *[blood alcohol content (BAC)](http://en.wikipedia.org/wiki/Blood_alcohol_content)* with monthly, weekly and daily statistics and graphs. (It speaks only Czech, but the upcoming *Alkomer 2* will be in English).
 
 The app was available in the [Google Play](https://play.google.com/store/apps/details?id=cz.jmx.tomik.alkomer.android), with almost 20.000 downloads.
 
 In anticipation of *Alkomer 2* release, I am open sourcing original *Alkomer* app. The app is dependant on backend, which is no longer running and therefore if you compile this app, it will not work. However this code may be helpful to somebody.
 
 ## Screenshots
-![Dashboard](/img/dashboard.png)
-![List of drinks](/img/drinklist.png)
-![List of drunk drinks](/img/glasslist.png)
-![Month statistics](/img/month_stats.png)
-![Statistics](/img/statistics.png)
+<img src="/img/dashboard.png" style="width:220px"> <img src="/img/drinklist.png" style="width:220px"> 
+
+<img src="/img/glasslist.png" style="width:220px"> <img src="/img/month_stats.png" style="width:220px"> 
+
+<img src="/img/statistics.png" style="width:220px">
 
 ## Requirements
 *Android 1.6* or higher
