@@ -79,38 +79,34 @@ public class RegistrationAsyncTask extends AsyncTask<String[], Void, Integer> {
 	
 	protected void onPostExecute(Integer value) {		
 		if (value == 1) {			
-			Toast.makeText(context, "Zaregistrováno, vítejte!", Toast.LENGTH_LONG).show();
+			Toast.makeText(context, "Zaregistrovï¿½no, vï¿½tejte!", Toast.LENGTH_LONG).show();
 			
 			SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-			/*
-			 * .--- . / - --- / .--. . -.- -. . / --.. -.- ..- .-. ...- . -. .- / .. -- .--. .-.. . -- . -. - .- -.-. . --..-- / 
-			 * - .- -.- --- ...- -.-- / -.-. ..- .-. .- -.- -.-- / .--- ... . -- / -.. .-.. --- ..- .... --- / 
-			 * -. . ...- .. -.. . .-.. .-.-.- / ..-. .- -.- - / .--- . / - --- / --.. .- ... .-. .- -. -.-- ?
-			 */
-			Editor editor = prefs.edit();		
-		    editor.putString("email", email);
-		    editor.putString("password", password);
-		    editor.putBoolean("deleteInfoShown", false);
 
-		    editor.commit();
+			Editor editor = prefs.edit();		
+		    	editor.putString("email", email);
+		    	editor.putString("password", password);
+		    	editor.putBoolean("deleteInfoShown", false);
+
+		    	editor.commit();
 		    
 			Intent intent = new Intent(context, SettingsActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	    	
-	    	context.startActivity(intent);			
+	    		context.startActivity(intent);			
 		} else {			
 			AlertDialog.Builder builder = new AlertDialog.Builder(context);
-	    	builder.setTitle("Chyba!")
-			.setMessage("Uživatel s tímto emailem už existuje!")	    			       
+	    		builder.setTitle("Chyba!")
+			.setMessage("Uï¿½ivatel s tï¿½mto emailem uï¿½ existuje!")	    			       
 			.setCancelable(false)
 			.setIcon(R.drawable.simple_icon)
-	        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+	        	.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 		           public void onClick(DialogInterface dialog, int id) {
 		        	   dialog.dismiss();
 		           }
-		       });
-	    	Dialog d = builder.create();
-	    	d.show();			
+		       	});
+	    		Dialog d = builder.create();
+	    		d.show();			
 		}
 
     }
